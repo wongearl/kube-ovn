@@ -1640,8 +1640,8 @@ spec:
               cpu: 300m
               memory: 300Mi
             limits:
-              cpu: 3
-              memory: 4Gi
+              cpu: 1500m
+              memory: 2Gi
           volumeMounts:
             - mountPath: /var/run/openvswitch
               name: host-run-ovs
@@ -2638,8 +2638,8 @@ spec:
               cpu: 200m
               memory: 200Mi
             limits:
-              cpu: 1000m
-              memory: 1Gi
+              cpu: 500m
+              memory: 500Mi
       nodeSelector:
         kubernetes.io/os: "linux"
       volumes:
@@ -2783,8 +2783,8 @@ spec:
             cpu: 100m
             memory: 100Mi
           limits:
-            cpu: 1000m
-            memory: 1Gi
+            cpu: 500m
+            memory: 500Mi
       nodeSelector:
         kubernetes.io/os: "linux"
       volumes:
